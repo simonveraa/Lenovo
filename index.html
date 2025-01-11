@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento de Google Docs</title>
+    <style>
+        #contenido {
+            display: none;
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleContenido() {
+            var contenido = document.getElementById('contenido');
+            if (contenido.style.display === 'none') {
+                contenido.style.display = 'block';
+            } else {
+                contenido.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Hola</h1>
+    <p>Dime:</p>
+    <p>Este es un documento de Google Docs.</p>
+    <button onclick="toggleContenido()">Mostrar/Ocultar contenido</button>
+    <div id="contenido">
+        <p>Acá puedo escribir todo lo que quiera. Y si me queda mal, no importa, porque después lo corrijo en mi casa y lo dejo bonito. De esta manera aprovecho de estudiar al ir corrigiendo y dejando bonito.</p>
+    </div>
+</body>
+</html>
